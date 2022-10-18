@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 // function Counter() {
 //     const [count, setCount] = useState(0);
@@ -10,7 +10,7 @@ import React, { useState } from "react";
 //     }
 
 //     return <button onClick = { increment } > I have been clicked { count }
-//     times < /button>; 
+//     times < /button>;
 
 // }
 
@@ -29,21 +29,19 @@ import React, { useState } from "react";
 // }
 
 function Counter() {
-    const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1)
 
-    function increment() {
-        // call setCount twice, to update the counter by two every time we click
-        setCount(count + 2);
-        // setCount(count + 1);
-    }
+  function increment() {
+    // call setCount twice, to update the counter by two every time we click
+    setCount(count + 2)
+    // setCount(count + 1);
+  }
 
-    return <div >
-        <
-        button onClick = { increment } > { count }
-
-    <
-    /button> < /
-    div > ;
+  return (
+    <div>
+      <button onClick={increment}> {count}</button>{' '}
+    </div>
+  )
 }
 
-export default Counter;
+export default Counter
